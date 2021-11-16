@@ -1,5 +1,21 @@
-# Test
+# commit 메시지 작성
 
-Test  
-Commit with `this` but in vi editor  
-What if I amend this commit?
+메시지만 간단하게 작성하고 싶은 경우에는 `git commit -m`으로 커밋한다.(대부분의 경우)  
+그 외의 경우에는 `git commit` 을 이용해 vi 에디터를 띄워서 커밋을 작성한다. 이 때 커밋 메시지에 본문이나 꼬리말을 작성하고 싶으면, 제목과 본문 사이에 빈 라인을 하나 두어서 구분한다.  
+
+예시)
+```
+> git commit
+
+This is a commit message.
+
+커밋의 본문입니다. 꼭 작성할 필요는 없고, 커밋에
+대한 부연 설명이 필요하거나 커밋한 이유를 설명하
+고 싶을 때 작성합니다. 되도록이면 한 줄당 72자를 넘
+기지 않도록 합니다. 이 내용은 [이 글](https://doublesprog
+ramming.tistory.com/256)을 참고하며 작성했습니다.
+
+커밋의 꼬리말입니다. 일반적인 경우 이 글처럼 내용
+을 적지는 않고, 다음 줄과 같이 작성합니다.
+Resolves #25
+```
